@@ -203,7 +203,7 @@ export function GraphRail({
                         : undefined
                 }
                 className={cn(
-                    'group/rail-node absolute top-8 left-1/2 flex -translate-1/2 rounded-full',
+                    'group/rail-node absolute top-8 left-1/2 z-10 flex -translate-1/2 rounded-full',
                     {
                         'top-1/2': nodePosition === 'center',
                         'top-[23px]': nodePosition === 'author',

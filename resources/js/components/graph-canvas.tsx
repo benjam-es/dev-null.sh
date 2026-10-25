@@ -634,7 +634,7 @@ export function GraphCanvas({ children }: { children: ReactNode }) {
     return (
         <GraphContext.Provider value={registry}>
             <GraphDrawingContext.Provider value={isDrawing}>
-                <div ref={containerRef} className="relative">
+                <div ref={containerRef} className="relative isolate">
                     {children}
                     <svg
                         ref={canvasRef}
